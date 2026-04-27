@@ -40,6 +40,7 @@
     "@tauri-apps/plugin-sql": "2.3.2",
     "@wenyan-md/core": "^3.0.1",
     "@wenyan-md/ui": "file:./wenyan-ui",
+    "mermaid": "^11.14.0",
     "modern-screenshot": "^4.6.8"
   },
   "packageManager": "pnpm@10.7.1"
