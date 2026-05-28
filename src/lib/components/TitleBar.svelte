@@ -1,5 +1,12 @@
 <script lang="ts">
-    import { PlatformButtons, Win32WindowButtons, WenYanButton, MacWindowButtons, FileSidebarButton } from "@wenyan-md/ui";
+    import {
+        PlatformButtons,
+        Win32WindowButtons,
+        WenYanButton,
+        MacWindowButtons,
+        FileSidebarButton,
+        ViewModeButtons,
+    } from "@wenyan-md/ui";
     import { getCurrentWindow } from "@tauri-apps/api/window";
     import { type } from "@tauri-apps/plugin-os";
     import { onMount } from "svelte";
@@ -34,10 +41,12 @@
             <MacWindowButtons {minimizeWindow} {maximizeWindow} {closeWindow} class="mr-2" />
             <FileSidebarButton />
             <span class="text-xs font-bold select-none">文颜</span>
+            <ViewModeButtons />
         {:else}
             <WenYanButton w="20px" />
             <span class="text-xs font-bold select-none">文颜</span>
             <FileSidebarButton />
+            <ViewModeButtons />
         {/if}
     </div>
     <div class="flex gap-4">
